@@ -13,9 +13,9 @@
 <body id="order-page">
     <div class="side-panel bg-danger">
         <h3 class="heading bg-primary">Order Info</h3>
-        <div id="order-info">
+        <div id="order-info" >
             <h3>Order Amount:</h3>
-            <h4>$ <span id="amount"> </span></h4>
+            <h4>sh <span id="amount"> </span></h4>
         </div>
 
         <h3 class="heading bg-primary">Address</h3>
@@ -71,6 +71,7 @@
                                 <option value="0">small</option>
                                     <option value="0">large</option>
                                     <option value ="0">Extra large</option>
+                                    <option value="0">Regular</option>
                             </select>
                         </div>
 
@@ -97,39 +98,39 @@
 
                         <!-- TOPPINGS -->
                         <fieldset id="toppings" class='text-danger'>
-                            <legend>Choose Your Topping ($0.99 each)</legend>
+                            <legend>Choose Your Topping (sh 100 each)</legend>
                             <div class="checkbox-group customize">
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="pepperoni">Pepperoni</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="sausage">Sausage</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="ham">Ham</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="bacon">Bacon</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="Salami">Salami</label>
-                                 <input name="topping" type="checkbox" value='0.99'>
+                                 <input name="topping" type="checkbox" value='100'>
                                 <label for="peppers">Peppers</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="olives">Olives</label>
 
                                 <br>
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="jalapenos">Jalapenos</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="mushrooms">Mushrooms</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="pineapple">Pineapple</label>
 
-                                <input name="topping" type="checkbox" value='0.99'>
+                                <input name="topping" type="checkbox" value='100'>
                                 <label for="onion">Onion</label>
                             </div>
                         </fieldset>
@@ -144,7 +145,7 @@
             <div class="card-header text-center text-secondary">Billing Information</div>
             <div class="card-body bg-secondary text-danger">
                 <div id="address-info">
-                    <form id="info-form" action="js/order-info.js">
+                    <form id="info-form">
                        <h4 class="card-title">Card Information</h4>
                         <fieldset>
                             <input type="checkbox" id="same">
@@ -199,7 +200,7 @@
                 </div>
                 
                 <!-- CARD FORM -->
-                <form id="billing" action="js/card-validation.js">
+                <form id="billing" action="js/order-info.js">
             
                     <h4 class="card-title">Card Information</h4>
                     <div id="card-info">

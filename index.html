@@ -1,93 +1,147 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Yummy Pizza Ninja</title>
-    <link href="styles/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src='js/main.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href=" styles/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Yummy Pizaa Niggas</title>
 </head>
+
 <body>
-</body>
-    <div id ="landing-page">
-       <!-- PAGE CONTENT -->
-        <div class="text-center" id="content">
-            <div id="jumbo-h1"class='text-secondary text-center'>
-                <h1>Yummy pizaa niggas</h1>
-            </div>
-            <p><a class="btn btn-lg btn-danger" id="order" href="#" role="button">Order Now</a>
-            </p>
+  <div class="container">
+    <div id="home">
+      <h1 id="title"><span id="y">Y</span><span id="u">U</span><span id="m">M</span><span id="m">M</span><span id="y">Y</span><h1></h1>
+      </span>
+      <img src="images/title1.jpeg" id="title1">
+      <h4 id="love">Love at First taste</h4>
+      <img id="icon" src="images/icon.png">
+    </div>
+    <div id="work">
+
+        <div id="about">
+            <h1 id="magic">ABOUT Yummy Pizaa Niggas</h1>
+            <P><b>Hapiness and  greatness in every slice</b><br> at Yummy pizza Niggas<br>
+              you get to make your own custom pizza order and enjoy every slice.<br><b>You can also order a delivery
+              you don't have to take<br> No long walks get your pizza at your door step.
+            </P>
+          </div>
+  
+
+      <div id="choose">
+        <div class="order">
+          <h2>MAKE YOUR ORDER</h2>
+          <button id="order" type="button">click to order</button>
         </div>
+        <div class="deliver"> 
+            <h2>ORDER A DELIVERY</h2>
+            <button id="deliver" type="button">click to order</button>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-6">
+        <div id="menu">
+          <form>
+            <fieldset>
+              <legend>Make Your Own Pizza</legend>
+  
+              <label>Select your pizza size</label>
+              <select id="sizes">
+                <option value="1000" id="biggest">LARGE PIZZA</option>
+                <option value="800" id="bigger">MEDIUM PIZZA</option>
+                <option value="600" id="big">SMALL PIZZA</option>
+              </select><br>
+  
+              <label>Select the crust you prefer</label>
+              <select id="crusts">
+                <option value="150" id="crispy">CRISPY</option>
+                <option value="100" id="stuffed">STUFFED</option>
+                <option value="200" id="gluten">GLUTEN FREE</option>
+                <option value="220" id="sicilian">SICILIAN</option>
+                <option value="250" id="pretzel">PRETZEL</option>
+              </select><br>
+  
+              <label>Choose you favourite toppings</label>
+              <select id="toppings">
+                <option value="100" id="pepperoni">PEPPERONI</option>
+                <option value="100" id="pineapple">PINEAPPLE</option>
+                <option value="100" id="olive">BLACK OLIVES</option>
+                <option value="100" id="mushroom">MUSHROOMS</option>
+                <option value="100" id="cheese">CHEESE</option>
+                <option value="100" id="onions">ONIONS</option>
+                <option value="100" id="bacon">BACON</option>
+                <option value="100" id="pepper">GREEN PEPPER</option>
+              </select><br>
+  
+              <label>How many pizzas do you want:</label>
+              <input id="numberOfPizzas" type="number"><br>
+
+              <button type="submit" value="Submit" id="makeOrder" onclick="totalPrice()">Make Order</button>
+            </fieldset>
+          </form>
+          <label>Total price</label>
+          <input type="text" id="total" placeholder="total"><br>
+        </div>
+      </div>
+  
+      <div class="col-md-6">
+        <div id="menu1">
+            <form>
+              <fieldset>
+                <legend>Order a Delivery</legend>
+    
+                <label>Select your pizza size</label>
+                <select id="sizes1">
+                  <option value="1000" id="biggest">LARGE PIZZA</option>
+                  <option value="800" id="bigger">MEDIUM PIZZA</option>
+                  <option value="600" id="big">SMALL PIZZA</option>
+                </select><br>
+    
+                <label>Select the crust you like</label>
+                <select id="crusts1">
+                  <option value="150" id="crispy">CRISPY</option>
+                  <option value="100" id="stuffed">STUFFED</option>
+                <option value="200" id="gluten">GLUTEN FREE</option>
+                <option value="220" id="sicilian">SICILIAN</option>
+                <option value="250" id="pretzel">PRETZEL</option>
+              </select><br>
+  
+              <label>Choose you favourite toppings</label>
+              <select id="toppings1">
+                <option value="100" id="pepperoni">PEPPERONI</option>
+                <option value="100" id="pineapple">PINEAPPLE</option>
+                <option value="100" id="olive">BLACK OLIVES</option>
+                <option value="100" id="mushroom">MUSHROOMS</option>
+                <option value="100" id="cheese">CHEESE</option>
+                <option value="100" id="onions">ONIONS</option>
+                <option value="100" id="bacon">BACON</option>
+                <option value="100" id="pepper">GREEN PEPPER</option>
+              </select><br>
+  
+              <label>How many pizzas do you want:</label>
+              <input id="numberOfPizzas1" type="number"><br>
+
+              <label>Tell us your location</label>
+              <input id="location" type="text"><br>
+
+              <button type="submit" id="orderDelivery" value="Submit" onclick="totalPrice1()">Order Delivery</button>
+            </fieldset>
+          </form>
+          <label>Total price</label>
+          <input type="text" id="totalDelivery" placeholder="total">
+        </div>
+      </div>
+
+    </div>
     </div>
 
-   <!-- MODAL -->
-   
-    <div id="modal">
-        <div id="modal-content">
-           <span id="close">+</span>
-            <div>
-                <img id="delivery-art" src="images/pizza-delivery.jpg" alt="pizza delivery- art">
-            </div>
-            <form id="info-form" >
-                <fieldset>
-                    <legend>Enter  Your Delivery Information</legend>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputName">Name*</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone">Phone Number*</label>
-                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number (777777">
-                        </div>
-                    </div>
-            
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputAddress-type">Address Type*</label>
-                            <select id="inputAddress-type" class="form-control">
-                                <option selected value="dorm">Dorm</option>
-                                <option value="campus">Campus</option>
-                                <option value="business">Business</option>
-                                <option value="Apartment">Apartment</option>
-                                <option value="hotel">Hotel</option>
-                                <option value="house"><House/option>
-                                <option value="other">Other</option>
-                              </select>
-                        </div>
-                        <div id="inputOther" class='col-md-6 offset-2'>
-                            <label for="inputOther">Other</label>
-                            <input id="other" type="text" class="form-control">
-                        </div>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="inputAddress">Address*</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-            
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">City*</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <!--
-                        <div class="form-group col-md-4">
-                            <label for="inputState">State*</label>
-                            <input type="text" class="form-control" id="inputState">
-                        </div>
-                    -->
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Zip*</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-                    <a id="submit-address" type="submit" class="btn btn-danger" href="order-info.html">Order</a>
-                    <div><span>* required</span></div>
-                </fieldset>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+  
+  </html>

@@ -62,7 +62,7 @@ function dateValidate() {
     var currentYear = currentDate.getFullYear();
     var currentMonth = currentDate.getMonth();
     
-    //console.log($('ex-year').value , $('ex-month').value);
+    //console.log(sh('ex-year').value , $('ex-month').value);
     
     if(currentYear === $('ex-year').value && currentMonth > $('ex-month').value){
         $('date-error').innerText = 'Invalid Date';

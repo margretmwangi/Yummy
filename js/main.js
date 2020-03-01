@@ -83,10 +83,10 @@ function inputValidation() {
     'use strict';
     var valid = true;
     var nameRegex = /^[a-zA-Z]+$/;
-    var phoneRegex = /^\(\d{3}[)]\d{3}-\d{4}$|^\(\d{3}\)\s\d{3}-\d{4}$|^\d{10}$/;
+    var phoneRegex = /^\(\d{3}[)]\d{3}-\d{4}sh|^\(\d{3}\)\s\d{3}-\d{4}sh|^\d{10}sh/;
     //var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var zipRegex = /^\d{5}$/g;
-    var stateRegex = /^[a-z]{2}$/gi;
+    var zipRegex = /^\d{5}sh/g;
+    var stateRegex = /^[a-z]{2}sh/gi;
 
     console.log(nameRegex.test($('inputName').value));
 
