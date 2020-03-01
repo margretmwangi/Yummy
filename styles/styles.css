@@ -2,18 +2,12 @@
 /**************
     LAYOUT
 **************/
-#landing-page, #order-page{
-    background: url('../images/vegetables-italian-pizza.jpg');
-    overflow-x: hidden;
-    background-position: center center;
+#landing-page,#order-page{
+    background-image: url(../images/vegetables-italian-pizza.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat:no-repeat ;
 }
-
-ul li{
-    list-style: none;
-}
-
 #content {
     height: 100vh;
     display: flex;
@@ -31,6 +25,8 @@ ul li{
 }
 
 #content p a{
+    margin: 1em;
+}
     margin: 1em;
 }
 
@@ -64,7 +60,6 @@ ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: 800ms fadein linear;
 }
 
 @keyframes fadein{
@@ -87,10 +82,10 @@ ul li{
     border-radius: 10px;
 }
 
-#delivery-clip-art{
+#delivery-art{
     display: block;
-    width: 15em;
-    margin: 0 auto;
+    padding-top: 0em;
+    margin: 0;
     border-radius: 40%
 }
 
