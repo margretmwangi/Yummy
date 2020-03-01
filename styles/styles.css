@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(0, 0, 0);
+  }
+  .container{
+    background-color: white;
+    width: 80%;
+  }
+  #home {
+    color: black;
+    text-align: center;
+    height: 50vh;
+  }
+  #title{
+    font-size: 100px;
+    position: relative;
+    top: 15%;
+    /* color: gold; */
+  }
+  #m{
+    color: red;
+  }
+  #a{
+    color: green;
+  }
+  #g{
+    color: gold;
+  }
+  #i{
+    color: brown;
+  }
+  #title1{
+    width: 300px;
+  }
+  #love{
+    font-size: 50px;
+  }
+  #icon{
+    animation: cubic-bezier(bounce 5s infinite);
+  }
+  #choose{
+    display: flex;
+    text-align: center;
+  }
+  .order{
+    margin-left: 8%;
+    text-decoration: underline;
+  }
+  .deliver{
+    margin-left: 23%;
+    text-decoration: underline;
+  }
+  #order, #deliver{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    animation: bounce 3s infinite;
+  }
+  #menu{
+    display: none;
+    margin-left: 16%;
+  }
+  #menu1{
+    display: none;
+    margin-left: 22%;
+  }
+  #makeOrder, #orderDelivery{
+    background-color: brown;
+    color: white;
+  }
+  #about{
+      background-image: url(../images/pizza\ sample1.jpeg);
+    text-align: center;;
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+    margin-top: 6%;
+  }
+  #yummy{
+    text-decoration: underline;
+    padding-top: 30px;
+  }
+  
