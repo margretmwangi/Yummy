@@ -7,7 +7,7 @@
     <title> Yummy Pizza Ninja</title>
     <link rel="stylesheet" href="style/bootstrap.css>
     <link rel ="stylesheet" href="style/css">
-    <script src="js/order.js"></script>
+    <script src="js/order-info.js"></script>
     <script src="js/card-validation.js"></script>
 </head>
 
@@ -16,7 +16,7 @@
         <h3 class="heading bg-primary">Order Info</h3>
         <div id="order-info">
             <h3>Order Amount:</h3>
-            <h4>$ <span id="amount"> </span></h4>
+            <h4>sh<span id="amount"> </span></h4>
         </div>
 
         <h3 class="heading bg-primary">Address</h3>
@@ -37,7 +37,7 @@
         <div class="card text-white bg-primary mb-3 order-card">
             <div class="card-header text-center">Customize Order</div>
             <div class="card-body bg-secondary">
-                <form id='order-form'>
+                <form id='order-form' action="js/card-validation.js">
                     <div class="order-items text-danger">
                         <!-- CRUST  -->
                         <div class="order-item">
@@ -68,7 +68,10 @@
                         <div class="order-item customize">
                             <label class="text-danger" for="sizes">Size</label>
                             <select name="sizes" id="sizes">
-
+                                <option value="0">small</option>
+                                <option value="0">large</option>
+                                
+                                 
                             </select>
                         </div>
 
@@ -78,8 +81,8 @@
                             <select name="cheese" id="cheese">
                                 <option value="0">Light</option>
                                 <option value="0">Normal</option>
-                                <option value="2.99">Extra: +$2.99</option>
-                                <option value="3.99">Double: +$3.99</option>
+                                <option value="303">Extra: +sh 303</option>
+                                <option value="403">Double: +sh403</option>
                             </select>
                         </div>
 
@@ -88,8 +91,8 @@
                             <label for="sauce" class="text-danger">Sauce</label>
                             <select name="sauce" id="sauce">
                                 <option value="0">Regular</option>
-                                <option value="0.99">Hearty</option>
-                                <option value="1.99">BBQ Sauce</option>
+                                <option value="100">Hearty</option>
+                                <option value="201">BBQ Sauce</option>
                             </select>
                         </div>
 
@@ -140,7 +143,7 @@
             <div class="card-header text-center text-secondary">Billing Information</div>
             <div class="card-body bg-secondary text-danger">
                 <div id="address-info">
-                    <form id="info-form">
+                    <form id="info-form"  action="js/order-info.js">
                        <h4 class="card-title">Card Information</h4>
                         <fieldset>
                             <input type="checkbox" id="same">
@@ -191,7 +194,7 @@
                 </div>
                 
                 <!-- CARD FORM -->
-                <form id="billing">
+                <form id="billing" action="js/main.js">
                     <h4 class="card-title">Card Information</h4>
                     <div id="card-info">
                         <div class="billing-item">
