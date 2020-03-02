@@ -132,6 +132,9 @@ border-radius: 10px;
 #toppings{
 display: block;
 }
+.amount{
+    display: inline-block;
+}
 
 .order-item, .billing-item{
 display: flex;
