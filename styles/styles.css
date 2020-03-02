@@ -134,6 +134,8 @@ display: block;
 }
 .amount{
     display: inline-block;
+    flex-direction: unset;
+    color: transp;
 }
 
 .order-item, .billing-item{
