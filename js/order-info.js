@@ -123,10 +123,10 @@ var ht = {
       'use strict';
       var amount = 0;
    
-      amount = (+$('sizes').value) + (+$('cheese').value) + (+$('sauce').value) + getToppings();
+      amount = (+sh('sizes').value) + (+sh('cheese').value) + (+sh('sauce').value) + getToppings();
       
       //console.log( 'the total is ' + amount);
-      $('amount').innerText = amount.toFixed(2);
+      sh('amount').innerText = amount.toFixed(2);
       
   }
   

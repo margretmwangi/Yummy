@@ -183,14 +183,6 @@ function inputValidation() {
         $('inputName').classList.add('error-input');
         valid = false;
     }
-    
-    // STATE VALIDATION
-    if (stateRegex.test($('inputState').value)) {
-        $('inputState').classList.remove('error-input');
-    } else {
-        $('inputState').classList.add('error-input');
-        valid = false;
-    }
 
 
     //ZIP CODE VALIDATION
